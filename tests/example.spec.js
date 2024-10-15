@@ -1,6 +1,6 @@
 const {test, expect, firefox} = require('@playwright/test');
 
-test("First test @smoke", async({page})=>{
+test("First test @regression", async({page})=>{
     //
     await page.goto("https://playwright.dev");
     await page.pause();
