@@ -1,6 +1,6 @@
 const {test, expect, firefox} = require('@playwright/test');
 
-test("First test", async({page})=>{
+test("First test @smoke", async({page})=>{
     //
     await page.goto("https://playwright.dev");
     await page.pause();
@@ -8,7 +8,7 @@ test("First test", async({page})=>{
     await expect(title).toHaveText('Playwright');
 })
 
-test("Second test", async({page,browserName})=>{
+test("Second test @regression", async({page,browserName})=>{
     //
     test.skip(browserName === 'firefox', 'Working on the firefox fix');
     await page.goto("https://the-internet.herokuapp.com/");
@@ -17,7 +17,15 @@ test("Second test", async({page,browserName})=>{
     await page.locator("text=Add Element").click();
 })
 
-test("Duplicate test", async({page})=>{
+test("Duplicate test @smoke", async({page})=>{
+    //
+    await page.goto("https://the-internet.herokuapp.com/");
+    await page.pause();
+    await page.locator("text=Add/Remove Elements").click();
+    await page.locator("text=Add Element").click();
+})
+
+test("Duplicate test @regression", async({page})=>{
     //
     await page.goto("https://the-internet.herokuapp.com/");
     await page.pause();
