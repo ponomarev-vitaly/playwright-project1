@@ -15,3 +15,11 @@ test("Second test", async({page})=>{
     await page.locator("text=Add/Remove Elements").click();
     await page.locator("text=Add Element").click();
 })
+
+test.only("Duplicate test", async({page})=>{
+    //
+    await page.goto("https://the-internet.herokuapp.com/");
+    await page.pause();
+    await page.locator("text=Add/Remove Elements").click();
+    await page.locator("text=Add Element").click();
+})
