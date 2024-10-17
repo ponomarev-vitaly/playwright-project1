@@ -1,1 +1,5 @@
-const {PlaywrightTestConfig} = require ('@playwright/test')
+const {PlaywrightTestConfig} = require ('@playwright/test');
+
+const config = {
+    
+}
