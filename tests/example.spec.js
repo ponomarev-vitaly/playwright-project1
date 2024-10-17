@@ -15,7 +15,7 @@ test.describe("Smoke tests", () => {
     await page.goto("https://the-internet.herokuapp.com/");
     await page.pause();
     await page.locator("text=Add/Remove Elements").click();
-    await page.screenshot({path: "screenshot.png"});
+    // await page.screenshot({path: "screenshot.png"});
     await page.locator("text=Add Element").click();
   });
 
