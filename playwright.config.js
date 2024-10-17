@@ -1,8 +1,10 @@
 const {PlaywrightTestConfig} = require ('@playwright/test');
+const MyReporter = require('./reporter');
 
 const config = {
     retries: 1,
     timeout: 60000,
+    reporter: 'reporter.js',
     use: {
         baseURL: "https://the-internet.herokuapp.com/",
         headless: true,
