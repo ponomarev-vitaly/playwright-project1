@@ -9,7 +9,7 @@ test.describe("Smoke tests", () => {
     await expect(title).toHaveText("Playwright");
   });
 
-  test("Second test @regression", async ({ page, browserName }) => {
+  test.only("Second test @regression", async ({ page, browserName }) => {
     //
     test.skip(browserName === "firefox", "Working on the firefox fix");
     await page.goto("https://the-internet.herokuapp.com/");

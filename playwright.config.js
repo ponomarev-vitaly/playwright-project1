@@ -4,9 +4,9 @@ const config = {
     retries: 1,
     timeout: 60000,
     use: {
-        headless: true,
+        headless: false,
         viewport: {width: 1280, height: 720},
-        video: "off",
+        video: "on",
         screenshot: "off"
 
     },
