@@ -9,12 +9,13 @@ test.describe("Smoke tests", () => {
     await expect(title).toHaveText("Playwright");
   });
 
-  test.only("Second test @regression", async ({ page, browserName }) => {
+  test("Second test @regression", async ({ page, browserName }) => {
     //
     test.skip(browserName === "firefox", "Working on the firefox fix");
     await page.goto("https://the-internet.herokuapp.com/");
     await page.pause();
     await page.locator("text=Add/Remove Elements").click();
+    await page.screenshot({path: "screenshot.png"});
     await page.locator("text=Add Element").click();
   });
 
