@@ -21,8 +21,8 @@ const config = {
             use: {browserName: 'firefox'}
         },
         {
-            name: 'Chrome',
-            use: {browserName: 'chromium'}
+            name: 'Webkit',
+            use: {browserName: 'webkit'}
         }
 
 
