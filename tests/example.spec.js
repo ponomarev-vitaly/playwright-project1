@@ -12,7 +12,7 @@ test.describe("Smoke tests", () => {
   test("Second test @regression", async ({ page, browserName }) => {
     //
     test.skip(browserName === "firefox", "Working on the firefox fix");
-    await page.goto("https://the-internet.herokuapp.com/");
+    await page.goto("/");
     await page.pause();
     await page.locator("text=Add/Remove Elements").click();
     // await page.screenshot({path: "screenshot.png"});
@@ -21,7 +21,7 @@ test.describe("Smoke tests", () => {
 
   test("Duplicate test @smoke", async ({ page }) => {
     //
-    await page.goto("https://the-internet.herokuapp.com/");
+    await page.goto("/");
     await page.pause();
     await page.locator("text=Add/Remove Elements").click();
     await page.locator("text=Add Element").click();
@@ -29,7 +29,7 @@ test.describe("Smoke tests", () => {
 
   test("Duplicate test @regression", async ({ page }) => {
     //
-    await page.goto("https://the-internet.herokuapp.com/");
+    await page.goto("/");
     await page.pause();
     await page.locator("text=Add/Remove Elements").click();
     await page.locator("text=Add Element").click();

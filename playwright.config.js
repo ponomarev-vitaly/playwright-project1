@@ -4,7 +4,8 @@ const config = {
     retries: 1,
     timeout: 60000,
     use: {
-        headless: false,
+        baseURL: "https://the-internet.herokuapp.com/",
+        headless: true,
         viewport: {width: 1280, height: 720},
         video: "on",
         screenshot: "on"
