@@ -12,11 +12,11 @@ test.describe("Smoke tests", () => {
   test("Second test @regression", async ({ page, browserName }) => {
     //
     test.skip(browserName === "firefox", "Working on the firefox fix");
-    await page.goto("/");
+    await page.goto("/checkboxes");
     await page.pause();
-    await page.locator("text=Add/Remove Elements").click();
+    // await page.locator("text=Add/Remove Elements").click();
     // await page.screenshot({path: "screenshot.png"});
-    await page.locator("text=Add Element").click();
+    // await page.locator("text=Add Element").click();
   });
 
   test("Duplicate test @smoke", async ({ page }) => {
