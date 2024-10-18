@@ -8,8 +8,7 @@ test.describe("Examples", () => {
         await page.locator('[placeholder="name@example.com"]').type("test@email.com");
         await page.locator('#currentAddress').type("This is the current address");
         await page.locator('#permanentAddress').type("This is the permanent address");
-        await page.locator('button.has-text("Submit")').click();   
-        await page.pause;
+        await page.locator('#submit').click(); 
 
     });
 
