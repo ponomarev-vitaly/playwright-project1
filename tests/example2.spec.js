@@ -15,8 +15,7 @@ test.describe("Examples", () => {
         await page.pause;
         await page.locator('button.has-text("Submit")').click();   
 
-        
-      });
+    });
 
 })
 
