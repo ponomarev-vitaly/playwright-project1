@@ -9,6 +9,7 @@ test.describe("Examples", () => {
         await page.locator('[placeholder="name@example.com"]').type("Test Email...");
         await page.locator('#currentAddress').type("This is the current address: ");
         await page.locator('#permanentAddress').type("This is the permanent address: ");
+        
 
 
         
