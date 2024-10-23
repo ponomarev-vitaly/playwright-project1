@@ -17,7 +17,7 @@ test.describe.parallel("Smoke tests", () => {
   //await expect(title).toHaveText("Playwright");
   //});
 
-  test("Second test @regression", async ({ page, browserName }) => {
+  test("Second test @regression @herokuapp", async ({ page, browserName }) => {
     //
     test.skip(browserName === "firefox", "Working on the firefox fix");
     await page.pause();
@@ -26,14 +26,14 @@ test.describe.parallel("Smoke tests", () => {
     await page.locator("text=Add Element").click();
   });
 
-  test("Duplicate test @smoke", async ({ page }) => {
+  test("Duplicate test @smoke @herokuapp", async ({ page }) => {
     //
     await page.pause();
     await page.locator("text=Add/Remove Elements").click();
     await page.locator("text=Add Element").click();
   });
 
-  test("Duplicate test @regression", async ({ page }) => {
+  test("Duplicate test @regression @herokuapp", async ({ page }) => {
     //
     await page.pause();
     await page.locator("text=Add/Remove Elements").click();
