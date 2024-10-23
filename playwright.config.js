@@ -1,4 +1,4 @@
-const {PlaywrightTestConfig} = require ('@playwright/test');
+const {PlaywrightTestConfig, devices} = require ('@playwright/test');
 const MyReporter = require('./reporter');
 
 const config = {
@@ -26,9 +26,28 @@ const config = {
         {
             name: 'Webkit',
             use: {browserName: 'webkit'}
+        },
+        {
+            name: 'iPhone 12',
+            use: {
+                browserName: 'webkit', // Safari engine used for iPhone
+                ...devices['iPhone 12'] // Emulate iPhone 12
+            }
+        },
+        {
+            name: 'Pixel 5',
+            use: {
+                browserName: 'webkit', // Safari engine used for iPhone
+                ...devices['iPhone 12'] // Emulate iPhone 12
+            }
+        },
+        {
+            name: 'Galaxy Note 9',
+            use: {
+                browserName: 'webkit', // Safari engine used for iPhone
+                ...devices['iPhone 12'] // Emulate iPhone 12
+            }
         }
-
-
 
     ]
 }
