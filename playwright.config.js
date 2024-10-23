@@ -10,6 +10,7 @@ const config = {
     viewport: { width: 1280, height: 720 },
     video: "on",
     screenshot: "on",
+    trace: "on"
   },
 
   projects: [
