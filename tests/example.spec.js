@@ -1,6 +1,6 @@
 const { test, expect, firefox } = require("@playwright/test");
 
-test.describe.parallel("Smoke tests", () => {
+test.describe.parallel("Smoke tests - Herokuapp", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/");
   });
