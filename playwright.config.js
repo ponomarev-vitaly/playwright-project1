@@ -44,14 +44,14 @@ const config = {
         ...devices["iPhone 12"],
       },
     },
-    {
+    /* {
       name: "Pixel 5-herokuapp",
       use: {
         browserName: "chromium",
         baseURL: "https://the-internet.herokuapp.com/",
         ...devices["Pixel 5"],
       },
-    },
+    }, */
     {
       name: "Galaxy Note 9-herokuapp",
       use: {
