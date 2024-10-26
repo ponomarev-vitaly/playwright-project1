@@ -33,10 +33,10 @@ test.describe.parallel("Smoke tests - Herokuapp", () => {
     await page.locator("text=Add Element").click();
   });
 
-  test("Duplicate test @regression @herokuapp", async ({ page }) => {
+  /* test("Duplicate test @regression @herokuapp", async ({ page }) => {
     //
     await page.pause();
     await page.locator("text=Add/Remove Elements").click();
     await page.locator("text=Add Element").click();
-  });
+  }); */
 });
