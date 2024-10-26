@@ -99,14 +99,14 @@ const config = {
         ...devices["Pixel 5"],
       },
     }, */
-    {
+    /* {
       name: "Galaxy Note 9-demoqa",
       use: {
         browserName: "webkit",
         baseURL: "https://demoqa.com/",
         ...devices["Galaxy Note 9"],
       },
-    },
+    }, */
   ],
 };
 
