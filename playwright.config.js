@@ -91,14 +91,14 @@ const config = {
         ...devices["iPhone 12"],
       },
     },
-    {
+    /* {
       name: "Pixel 5-demoqa",
       use: {
         browserName: "chromium",
         baseURL: "https://demoqa.com/",
         ...devices["Pixel 5"],
       },
-    },
+    }, */
     {
       name: "Galaxy Note 9-demoqa",
       use: {
